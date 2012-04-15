@@ -12,7 +12,7 @@ void setup(){
     float xnoise = xstart;
     for (float x = -(width/8); x <= (width/8); x+=3){
       xnoise += 0.023;
-      drawPoint(x,y,noise(xnoise,ynoise)); n n
+      drawPoint(x,y,noise(xnoise,ynoise));
     }
   }
 }
