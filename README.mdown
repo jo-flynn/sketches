@@ -1,8 +1,8 @@
-h1. Sketches
+# Sketches
 
 A repository for WIP Generative Art sketches in Processing.
 
-Some CC code adapted from Matt Pearson's __Generative Art: a practical guide using Processing__, which I'm currently working through.
+Some CC code adapted from Matt Pearson's _Generative Art: a practical guide using Processing_, which I'm currently working through.
 
 This is a running log of my exploration of generative art.
 
