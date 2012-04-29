@@ -1,5 +1,5 @@
 void setup(){
-  size(1000,1000,P3D);
+  size(1000,1000,OPENGL);
   background(255);
   stroke(0,50);
   fill(255,50,50,100);
