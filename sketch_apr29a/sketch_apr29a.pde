@@ -1,7 +1,10 @@
+import processing.opengl.*;
+
 float xstart, xnoise, ynoise;
 
 void setup() {
-  size(300,300);
+
+  size(600,800, OPENGL);
   smooth();
   background(255);
   xstart = random(10);
@@ -16,13 +19,24 @@ void setup() {
       drawPoint(x,y,noise(xnoise,ynoise));
     }
   }
+  saveRandomFileName();
 }
 
 void drawPoint(float x, float y, float noiseFactor){
   pushMatrix();
   translate(x,y);
-  rotate(noiseFactor * radians(360));
+  rotate(noiseFactor * radians(540));
+  float edgeSize = noiseFactor * 35;
+  float grey = 150 + (noiseFactor * 120);
+  float alph = 150 + (noiseFactor * 120);
+  noStroke();
+  fill(color(x+100,y-350,noiseFactor*400), alph);
   stroke(0,150);
-  line(0,0,20,0);
+  box(x);
   popMatrix();
+}
+
+// saves this image with a random filename.
+void saveRandomFileName(){
+  save("downthemondrain-"+int(random(1000))+".png");  
 }
