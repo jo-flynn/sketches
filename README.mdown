@@ -6,6 +6,6 @@ Some CC code adapted from Matt Pearson's _Generative Art: a practical guide usin
 
 This is a running log of my exploration of generative art.
 
-Everything here is a WIP, so expect Lax Documentation Standards.
+Everything here is a WIP, so expect Lax Documentation Standards and a lot of numbers thrown about.
 
 I'll put a real license here eventually, but feel free to share/remix/adapt, with a link back to [my website](http://joeflynn.net) if you could.
