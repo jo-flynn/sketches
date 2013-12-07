@@ -1,7 +1,7 @@
 int _num = 10;
 Circle[] _circArr = {};
 void setup(){
-  size(500,300);
+  size(500,300, P3D);
   background(255);
   smooth();
   strokeWeight(1);
@@ -73,7 +73,7 @@ class Circle {
           stroke(0,100);
           noFill();
           overlap *= -1;
-          ellipse(midx, midy, overlap,overlap);
+          sphere(midx, midy, overlap,overlap);
         }        
         if ((dis - radius - otherCirc.radius) < 0){
           touching = true;
